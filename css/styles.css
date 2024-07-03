@@ -82,7 +82,12 @@ img{
   text-align: center;
   color:var(--white);
   margin-top: 5rem;
+}
 
+@media (min-width: 768px ) {
+    .header__text{
+      margin-top: 15rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -91,11 +96,16 @@ img{
       justify-content: space-between;
       align-items: center;
     }
-  
+    .navbar__links{
+      display: flex;
+      gap: 2rem;
+    }
+
 }
 
 .logo{
     color: var(--white);  
+
 }
 
 .logo__name{
@@ -105,3 +115,11 @@ img{
 .logo__bold{
   font-weight: 700;
 }
+
+.navbar__link {
+  display: block;
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
