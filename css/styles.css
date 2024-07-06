@@ -25,6 +25,7 @@ body{
 .container {
   max-width: 120rem;
   width: 90%;
+  width: min(90%, 120rem);
   margin: 0 auto;
 }
 
@@ -89,6 +90,10 @@ img{
     .header__text{
       margin-top: 15rem;
     }
+}
+
+.navbar{ 
+  padding-top: 4rem;
 }
 
 @media (min-width: 768px) {
@@ -193,4 +198,10 @@ img{
 .widget-course__label,
 .widget-curso__info {
   font-size: 2rem;
+}
+
+.footer{
+  background-color: var(--black);
+  padding: 0 3rem 3rem 3rem;
+  margin-top: 4rem;
 }
