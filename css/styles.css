@@ -218,3 +218,12 @@ img{
       flex-basis: 50%;
     }
 }
+
+.course{
+  padding: 3rem;
+  border-bottom: 1px solid var(--ciruelo);
+}
+
+.course:last-of-type{
+  border: none;
+}
