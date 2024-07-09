@@ -6,9 +6,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/styles.css">
     <title>Soconusco Café</title>
+    <link rel="prefetch" href="aboutUs.html" as="document">
+
+    <!-- Preload -->
+    <link rel="preloead" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
+
+
+    <link rel="preload" href="css/normalize.css" as="styles">
+    <link rel="stylesheet" href="/css/normalize.css">
+    
+    <link rel="preload" href="/css/styles.css" as="styles">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <header class="header">
@@ -36,7 +45,10 @@
             <h3>Our Blog</h3>
             <article class="post">
                 <div class="post-image">
-                    <img src="img/blog1.jpg" alt="coffee image">
+                    <picture>
+                        <source srcset="img/blog1.webp" type="image/webp"> 
+                        <img loading="lazy" src="img/blog1.jpg" alt="coffee image">
+                    </picture>
                 </div>
 
                 <div class="post__content">
@@ -47,7 +59,10 @@
             </article>
             <article class="post">
                 <div class="post-image">
-                    <img src="img/blog2.jpg" alt="coffee image">
+                    <picture>
+                        <source srcset="img/blog2.webp" type="image/webp"> 
+                        <img loading="lazy" src="img/blog2.jpg" alt="coffee image">
+                    </picture>
                 </div>
 
                 <div class="post__content">
@@ -58,7 +73,10 @@
             </article>
             <article class="post">
                 <div class="post-image">
-                    <img src="img/blog3.jpg" alt="coffee image">
+                    <picture>
+                        <source srcset="img/blog3.webp" type="image/webp"> 
+                        <img loading="lazy" src="img/blog3.jpg" alt="coffee image">
+                    </picture>
                 </div>
 
                 <div class="post__content">
