@@ -157,12 +157,17 @@ img{
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 2rem;
+  border: none;
 }
 
 @media (min-width: 768px) {
     .button{
       display: inline-block;
     }
+}
+
+.button:hover{
+  cursor: pointer;
 }
 
 .button--primary{
@@ -250,21 +255,27 @@ img{
   background-color: var(--white);
   width: 95%;
   margin: -5rem auto;
+  padding: 5rem;
 
 }
 
 .field{
-
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 2rem;
 }
 
 .field__label {
-
+  flex:  0 0 9rem;
+  text-align: right;
+  padding-right:2rem ;
 }
 
 .input__field{
-
+  flex: 1;
+  border: 1px solid var(--ciruelo);
 }
 
 .input__field--textarea{
-
+  height: 20rem;
 }
