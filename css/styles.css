@@ -72,6 +72,14 @@ img{
   text-align: center;
 }
 
+.webp .header{
+  background-image: url(../img/banner.webp);
+}
+
+.nowebp .header{
+ 
+}
+
 .header{
   background-image: url(../img/banner.jpg);
   height: 60rem;
