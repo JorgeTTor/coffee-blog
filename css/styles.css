@@ -238,3 +238,33 @@ img{
 .course:last-of-type{
   border: none;
 }
+
+.contact-bg{
+  background-image: url(../img/contacto.jpg);
+  height: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form{
+  background-color: var(--white);
+  width: 95%;
+  margin: -5rem auto;
+
+}
+
+.field{
+
+}
+
+.field__label {
+
+}
+
+.input__field{
+
+}
+
+.input__field--textarea{
+
+}
