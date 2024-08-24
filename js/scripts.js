@@ -65,12 +65,12 @@ form.addEventListener('submit', function(event) {
     const { name, email, message}  = data;
 
     if(name === '' || email === '' || message === '' ){
-      showError('Todos los campos son obligatorios')
+      showAlert('Todos los campos son obligatorios', true)
 
        return;
     }
     // crear alerta de enviar correcamente
-    showMessage('Mensaje Enviado Correctamente');
+    showAlert('Mensaje Enviado Correctamente');
 })
 
 function readText(e){
@@ -78,12 +78,28 @@ function readText(e){
      console.log(data)
  }
 
- function showMessage(formMessage) {
+ function showAlert(mensaje, error = null){
     const alerta = document.createElement('P');
-    alerta.textContent = formMessage;
-    alerta.classList.add('correct');
-
+    alerta.textContent = mensaje;
+    
+    if(error) {
+        alerta.classList.add('error')
+    }else {
+        alerta.classList.add('correct')
+    }
     form.appendChild(alerta);
+    setTimeout(() => {
+        alerta.remove()
+    }, 5000)
+ }
+
+/*
+ function showMessage(formMessage) {
+    //const alerta = document.createElement('P');
+    // alerta.textContent = formMessage;
+  //  alerta.classList.add('correct');
+
+  //  form.appendChild(alerta);
 
     setTimeout(() => {
         alerta.remove()
@@ -91,14 +107,16 @@ function readText(e){
  }
  
 // Mostrar error en pantalla
+/*
 function showError(errMessage) {
-    const error = document.createElement('P');
-    error.textContent = errMessage
-    error.classList.add('error')
+   // const error = document.createElement('P');
+    // error.textContent = errMessage
+   //error.classList.add('error')
 
-   form.appendChild(error);
+ //  form.appendChild(error);
    setTimeout(() =>{
     error.remove();
    }, 5000)
 }
 
+*/
