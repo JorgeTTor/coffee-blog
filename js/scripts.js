@@ -86,4 +86,7 @@ function showError(errMensaje) {
     error.classList.add('error')
 
    form.appendChild(error);
+   setTimeout(() =>{
+    error.remove();
+   }, 5000)
 }

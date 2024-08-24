@@ -256,6 +256,7 @@ img{
   text-align: center;
   padding: 1rem;
   color: var(--white);
+  text-transform: uppercase;
 }
 
 .contact-bg{
