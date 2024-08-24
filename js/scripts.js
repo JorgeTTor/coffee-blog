@@ -69,20 +69,31 @@ form.addEventListener('submit', function(event) {
 
        return;
     }
-
-// enviar formulario
-    console.log('sending form')
+    // crear alerta de enviar correcamente
+    showMessage('Mensaje Enviado Correctamente');
 })
 
 function readText(e){
     data[e.target.id] = e.target.value
      console.log(data)
  }
+
+ function showMessage(formMessage) {
+    const alerta = document.createElement('P');
+    alerta.textContent = formMessage;
+    alerta.classList.add('correct');
+
+    form.appendChild(alerta);
+
+    setTimeout(() => {
+        alerta.remove()
+    }, 5000)
+ }
  
 // Mostrar error en pantalla
-function showError(errMensaje) {
+function showError(errMessage) {
     const error = document.createElement('P');
-    error.textContent = errMensaje;
+    error.textContent = errMessage
     error.classList.add('error')
 
    form.appendChild(error);
@@ -90,3 +101,4 @@ function showError(errMensaje) {
     error.remove();
    }, 5000)
 }
+
