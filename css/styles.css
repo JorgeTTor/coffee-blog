@@ -259,6 +259,14 @@ img{
   text-transform: uppercase;
 }
 
+.correct{
+  background-color: rgb(51, 118, 7);
+  text-align: center;
+  padding: 1rem;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
 .contact-bg{
   background-image: url(../img/contacto.jpg);
   height: 40rem;
